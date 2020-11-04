@@ -1,0 +1,2 @@
+https://api.weatherbit.io/v2.0/forecast/daily?city=belo+horizonte&key=5490d8df7dba44ca8af337baa984ba31&days=5
+https://www.weatherbit.io/static/img/icons/r01d.png

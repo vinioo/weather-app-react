@@ -1,0 +1,22 @@
+input {
+    width: 320px;
+    height: 42px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 0px 8px;
+}
+
+input:focus {
+    /* border: 2px solid rgb(47, 195, 240); */
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+}
+
+input:hover {
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
+
+input::placeholder {
+    color: rgb(172, 172, 172);
+}
