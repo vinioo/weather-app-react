@@ -23,24 +23,25 @@ const Home = () => {
   }, []);
 
   const handleSubmit = async () => {
+    await getForecast();
+  };
+
+  const getForecast = async () => {
     try {
       setLoading(true);
-      await getForecast();
+
+      const { data: response } = await weatherApi.get("/daily", {
+        params: {
+          city: query,
+        },
+      });
+
+      response && setForecast(response.data);
     } catch (err) {
       console.error(err);
     } finally {
       setLoading(false);
     }
-  };
-
-  const getForecast = async () => {
-    const { data: response } = await weatherApi.get("/daily", {
-      params: {
-        city: query,
-      },
-    });
-
-    response && setForecast(response.data);
   };
   return (
     <div className="home__container">
