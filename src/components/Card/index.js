@@ -29,7 +29,7 @@ const Card = ({ icon, max, min, date }) => {
         <img
           src={`${iconApiUrl}${icon}.png`}
           alt="weather icon"
-          class="card__container__header__icon"
+          className="card__container__header__icon"
         ></img>
       </div>
       <div className="card__container__content">

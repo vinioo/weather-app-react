@@ -32,3 +32,12 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     justify-items: center;
 }
+
+.loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(82, 82, 82, 0.4);
+}

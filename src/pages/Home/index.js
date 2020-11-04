@@ -11,22 +11,25 @@ import Card from "../../components/Card";
 import "./style.css";
 
 const Home = () => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("Belo Horizonte");
   const [forecast, setForecast] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const setInitialForecast = async () => {
       await getForecast();
-    }
-    setQuery('Belo Horizonte');
+    };
     setInitialForecast();
   }, []);
 
   const handleSubmit = async () => {
     try {
+      setLoading(true);
       await getForecast();
-    } catch(err) {
+    } catch (err) {
       console.error(err);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -38,9 +41,10 @@ const Home = () => {
     });
 
     response && setForecast(response.data);
-  }
+  };
   return (
     <div className="home__container">
+      {loading && <div className="loading"></div>}
       <div className="home__container__header">
         <Logo></Logo>
       </div>
