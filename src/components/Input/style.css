@@ -2,7 +2,7 @@ input {
     width: 320px;
     height: 42px;
     background: white;
-    border: none;
+    border: 2px solid #fafafa;
     border-radius: 8px;
     outline: none;
     padding: 0px 8px;

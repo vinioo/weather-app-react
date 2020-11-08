@@ -5,7 +5,7 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f1f6f9;
+  background: linear-gradient(159deg, rgba(241,246,249,1) 36%, rgba(219,228,255,1) 100%);
 }
 
 code {
