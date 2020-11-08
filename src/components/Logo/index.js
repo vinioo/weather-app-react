@@ -1,5 +1,3 @@
-import React from "react";
-
 import LogoImg from '../../assets/img/takeweather.png';
 
 import './style.css';

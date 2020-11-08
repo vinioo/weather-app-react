@@ -1,5 +1,3 @@
-import React from "react";
-
 import { iconApiUrl } from "../../services/api";
 
 import "./style.css";

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './style.css';
 
 const Input = ({ placeholder, onChange, value }) => {
