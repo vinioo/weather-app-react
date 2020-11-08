@@ -52,6 +52,13 @@
   color: grey;
 }
 
+.card__container__content__temperatures h1::after {
+  content: '';
+  position: relative;
+  left: 6px;
+  border-right: 1px solid rgba(163, 163, 163, 0.25);
+}
+
 .card__container__content__day {
   margin-top: 2rem;
 }
