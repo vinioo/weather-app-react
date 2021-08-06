@@ -17,7 +17,7 @@ const Card = ({ icon, max, min, date }) => {
     return days[key];
   };
   const getWeekDayName = () => {
-    const day = new Date(date).getDay();
+    const day = new Date(`${date} 00:00`).getDay();
     return mapWeekDays(day);
   };
 
